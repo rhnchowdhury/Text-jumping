@@ -1,9 +1,67 @@
 body {
-    background-color: skyblue;
-    background: linear-gradient(skyblue 0%,steelblue 100%);
-    font-family: cursive;
+    background: linear-gradient(rgb(42, 136, 173) 0%,rgb(122, 139, 152) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    font-size: 80px;
+    color: whitesmoke;
+    animation: word-bounce 0.3s ease infinite alternate;
+    text-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #ccc,
+        0 3px 0 #ccc,
+        0 4px 0 #ccc,
+        0 5px 0 #ccc,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, 0.4),
+}
+h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+@keyframes word-bounce {
+    100% {
+        top: -20px;
+        text-shadow:
+            0 1px 0 #ccc,
+            0 2px 0 #ccc,
+            0 3px 0 #ccc,
+            0 4px 0 #ccc,
+            0 5px 0 #ccc,
+            0 6px 0 #ccc,
+            0 7px 0 #ccc,
+            0 8px 0 #ccc,
+            0 9px 0 #ccc,
+            0 50px 50px rgba(0, 0, 0, 0.2),
+    }
+}
+
