@@ -1,0 +1,9 @@
+body {
+    background-color: skyblue;
+    background: linear-gradient(skyblue 0%,steelblue 100%);
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
